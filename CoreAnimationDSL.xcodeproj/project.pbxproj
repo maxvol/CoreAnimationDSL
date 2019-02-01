@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94B749E62204FC7F002F98DF /* SwiftDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B749E52204FC7E002F98DF /* SwiftDSL.framework */; };
+		94B749E82204FCFE002F98DF /* UIBezierPath+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B749E72204FCFE002F98DF /* UIBezierPath+DSL.swift */; };
+		94B749EA2204FD46002F98DF /* CAAnimation+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B749E92204FD46002F98DF /* CAAnimation+DSL.swift */; };
 		94D5E3C12202BF7100E24B9A /* CoreAnimationDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D5E3B72202BF7000E24B9A /* CoreAnimationDSL.framework */; };
 		94D5E3C62202BF7100E24B9A /* CoreAnimationDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D5E3C52202BF7100E24B9A /* CoreAnimationDSLTests.swift */; };
 		94D5E3C82202BF7100E24B9A /* CoreAnimationDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D5E3BA2202BF7100E24B9A /* CoreAnimationDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94B749E02204FAFE002F98DF /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		94B749E52204FC7E002F98DF /* SwiftDSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDSL.framework; path = ../../Carthage/Build/iOS/SwiftDSL.framework; sourceTree = "<group>"; };
+		94B749E72204FCFE002F98DF /* UIBezierPath+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+DSL.swift"; sourceTree = "<group>"; };
+		94B749E92204FD46002F98DF /* CAAnimation+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimation+DSL.swift"; sourceTree = "<group>"; };
+		94B749EB2204FDC0002F98DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		94D5E3B72202BF7000E24B9A /* CoreAnimationDSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreAnimationDSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D5E3BA2202BF7100E24B9A /* CoreAnimationDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationDSL.h; sourceTree = "<group>"; };
 		94D5E3BB2202BF7100E24B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B749E62204FC7F002F98DF /* SwiftDSL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,13 +61,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94B749E42204FC7E002F98DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94B749E52204FC7E002F98DF /* SwiftDSL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94D5E3AD2202BF7000E24B9A = {
 			isa = PBXGroup;
 			children = (
+				94B749EB2204FDC0002F98DF /* README.md */,
+				94B749E02204FAFE002F98DF /* Cartfile */,
 				94D5E3D12202BF8A00E24B9A /* DSL */,
 				94D5E3B92202BF7000E24B9A /* CoreAnimationDSL */,
 				94D5E3C42202BF7100E24B9A /* CoreAnimationDSLTests */,
 				94D5E3B82202BF7000E24B9A /* Products */,
+				94B749E42204FC7E002F98DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +112,9 @@
 		94D5E3D12202BF8A00E24B9A /* DSL */ = {
 			isa = PBXGroup;
 			children = (
+				94B749E72204FCFE002F98DF /* UIBezierPath+DSL.swift */,
 				94D5E3D22202BFA400E24B9A /* CALayer+DSL.swift */,
+				94B749E92204FD46002F98DF /* CAAnimation+DSL.swift */,
 			);
 			path = DSL;
 			sourceTree = "<group>";
@@ -119,6 +141,8 @@
 				94D5E3B32202BF7000E24B9A /* Sources */,
 				94D5E3B42202BF7000E24B9A /* Frameworks */,
 				94D5E3B52202BF7000E24B9A /* Resources */,
+				94B749E22204FBC9002F98DF /* Carthage */,
+				94B749E32204FBCB002F98DF /* Delete Nested Framework(s) */,
 			);
 			buildRules = (
 			);
@@ -201,12 +225,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94B749E22204FBC9002F98DF /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDSL.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		94B749E32204FBCB002F98DF /* Delete Nested Framework(s) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Delete Nested Framework(s)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\n    rm -fr Frameworks\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94D5E3B32202BF7000E24B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				94D5E3D32202BFA400E24B9A /* CALayer+DSL.swift in Sources */,
+				94B749E82204FCFE002F98DF /* UIBezierPath+DSL.swift in Sources */,
+				94B749EA2204FD46002F98DF /* CAAnimation+DSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +427,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CoreAnimationDSL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,6 +458,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CoreAnimationDSL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
