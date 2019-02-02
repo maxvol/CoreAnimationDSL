@@ -7,6 +7,17 @@
 //
 
 import UIKit
-import SwiftDSL
 
-extension CALayer: DSL { }
+extension CALayer {
+    @objc
+    @discardableResult
+    public func apply(_ closure: (CALayer) -> Void) -> CALayer {
+        closure(self)
+        return self
+    }
+}
+
+extension CALayer {
+    
+    
+}

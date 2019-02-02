@@ -7,6 +7,17 @@
 //
 
 import UIKit
-import SwiftDSL
 
-extension CAAnimation: DSL { }
+extension CAAnimation {
+    @objc
+    @discardableResult
+    public func apply(_ closure: (CAAnimation) -> Void) -> CAAnimation {
+        closure(self)
+        return self
+    }
+}
+
+extension CAAnimation {
+    
+    
+}

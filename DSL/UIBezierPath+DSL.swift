@@ -7,6 +7,16 @@
 //
 
 import UIKit
-import SwiftDSL
 
-extension UIBezierPath: DSL { }
+extension UIBezierPath {
+    @discardableResult
+    public func apply(_ closure: (UIBezierPath) -> Void) -> UIBezierPath {
+        closure(self)
+        return self
+    }
+}
+
+extension UIBezierPath {
+    
+    
+}
