@@ -12,6 +12,7 @@
 		94B74A172205BA48002F98DF /* CAShapeLayer+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74A162205BA48002F98DF /* CAShapeLayer+DSL.swift */; };
 		94B74A192205BC21002F98DF /* CABasicAnimation+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74A182205BC21002F98DF /* CABasicAnimation+DSL.swift */; };
 		94B74A1B2205BC37002F98DF /* CAKeyframeAnimation+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74A1A2205BC37002F98DF /* CAKeyframeAnimation+DSL.swift */; };
+		94D3FC612222C647006DCC76 /* CAGradientLayer+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D3FC602222C647006DCC76 /* CAGradientLayer+DSL.swift */; };
 		94D5E3C12202BF7100E24B9A /* CoreAnimationDSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D5E3B72202BF7000E24B9A /* CoreAnimationDSL.framework */; };
 		94D5E3C62202BF7100E24B9A /* CoreAnimationDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D5E3C52202BF7100E24B9A /* CoreAnimationDSLTests.swift */; };
 		94D5E3C82202BF7100E24B9A /* CoreAnimationDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D5E3BA2202BF7100E24B9A /* CoreAnimationDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +38,7 @@
 		94B74A162205BA48002F98DF /* CAShapeLayer+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+DSL.swift"; sourceTree = "<group>"; };
 		94B74A182205BC21002F98DF /* CABasicAnimation+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CABasicAnimation+DSL.swift"; sourceTree = "<group>"; };
 		94B74A1A2205BC37002F98DF /* CAKeyframeAnimation+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAKeyframeAnimation+DSL.swift"; sourceTree = "<group>"; };
+		94D3FC602222C647006DCC76 /* CAGradientLayer+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+DSL.swift"; sourceTree = "<group>"; };
 		94D5E3B72202BF7000E24B9A /* CoreAnimationDSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreAnimationDSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D5E3BA2202BF7100E24B9A /* CoreAnimationDSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationDSL.h; sourceTree = "<group>"; };
 		94D5E3BB2202BF7100E24B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				94B749E72204FCFE002F98DF /* UIBezierPath+DSL.swift */,
 				94D5E3D22202BFA400E24B9A /* CALayer+DSL.swift */,
 				94B74A162205BA48002F98DF /* CAShapeLayer+DSL.swift */,
+				94D3FC602222C647006DCC76 /* CAGradientLayer+DSL.swift */,
 				94B749E92204FD46002F98DF /* CAAnimation+DSL.swift */,
 				94B74A182205BC21002F98DF /* CABasicAnimation+DSL.swift */,
 				94B74A1A2205BC37002F98DF /* CAKeyframeAnimation+DSL.swift */,
@@ -238,6 +241,7 @@
 				94B74A1B2205BC37002F98DF /* CAKeyframeAnimation+DSL.swift in Sources */,
 				94D5E3D32202BFA400E24B9A /* CALayer+DSL.swift in Sources */,
 				94B74A192205BC21002F98DF /* CABasicAnimation+DSL.swift in Sources */,
+				94D3FC612222C647006DCC76 /* CAGradientLayer+DSL.swift in Sources */,
 				94B749E82204FCFE002F98DF /* UIBezierPath+DSL.swift in Sources */,
 				94B74A172205BA48002F98DF /* CAShapeLayer+DSL.swift in Sources */,
 				94B749EA2204FD46002F98DF /* CAAnimation+DSL.swift in Sources */,
