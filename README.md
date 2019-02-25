@@ -18,3 +18,8 @@ let animation = CAAnimation().apply {
     $0.autoreverses = true
 }
 ```
+
+Carthage setup -
+```
+github "maxvol/CoreAnimationDSL" ~> 0.0.6
+```
