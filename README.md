@@ -19,7 +19,3 @@ let animation = CAAnimation().apply {
 }
 ```
 
-Carthage setup -
-```
-github "maxvol/CoreAnimationDSL" ~> 0.0.6
-```
